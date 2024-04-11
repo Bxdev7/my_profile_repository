@@ -1,0 +1,114 @@
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+
+.body {
+    height:100vh;
+
+    
+}
+
+.general-bkgd{
+    display: grid;
+    width:auto;
+    padding-top: 25px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+    background-color: rgb(202, 190, 190);
+    position: relative;
+
+}
+
+.profile-container{
+    display: grid;
+    width:500px;
+    padding: 20px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+
+.name {
+    color: darkblue;
+    text-align: center;
+    font-weight: 700;
+    margin: 0 auto;
+  }
+
+.bio {
+    text-align: center;
+    font-style: italic;
+  }
+
+.banner-bkgd{
+    background-color: rgb(0, 60, 255);
+}
+
+.banner {
+    /* grid-area: banner; */
+    padding: 0px;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "top-left top-right";
+    border: 0cap;
+    background: url("banner_zen.jpg") repeat-x center;
+    position:static;
+    height:150px;
+    
+    /* background: url(https://images.unsplash.com/photo-1511207538754-e8555f2bc187?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=8867206…&auto=format&fit=crop&w=1164&q=80) 0% 0% / cover no-repeat; */
+  }
+
+.top-left{
+    grid-area: top-left;
+    padding-left: 20px;
+}
+
+
+.content {
+    position: relative;
+    background-color:aliceblue;
+    display: grid;
+    justify-content: center;
+    overflow-y: scroll;
+  }
+
+.page-foot {
+    background-color: azure;
+  }
+
+.face-photo {
+    display: grid;
+    height: 120px;
+    width: 120px;
+    /* margin: 0 auto; */
+    border-color: beige;
+    border: 5px solid #fff;
+    background-size: cover;
+    background-position: center;
+    /* justify-content: center; */
+    position:relative;
+    left:0px;
+    border-radius: 50%;
+    top:90px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+  }
+
